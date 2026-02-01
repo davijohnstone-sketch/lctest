@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rollino the Cat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #111;
+      color: #eee;
+    }
+    nav {
+      background: #222;
+      padding: 10px 20px;
+      display: flex;
+      gap: 15px;
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      color: #ce93d8;
+    }
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="joy.html">Joy</a>
+  <a href="jet.html">Jet</a>
+  <a href="rollino.html">Rollino</a>
+  <a href="casper.html">Casper</a>
+</nav>
+
+<div class="content">
+  <h1>Rollino – The Cardboard High Roller</h1>
+  <p>
+    Rollino doesn’t gamble with money, he gambles with dignity. His favorite
+    move is to dramatically roll off the couch, land upside down, and pretend
+    it was all part of an advanced stretching routine.
+  </p>
+  <p>
+    His true obsession is cardboard. Shoe boxes, delivery boxes, flattened
+    packing boxes – all are part of his private VIP lounge. Entry is by
+    invitation only, and the only accepted currency is treats.
+  </p>
+  <h2>Rollino’s House Games</h2>
+  <p>
+    - “Will the human trip over me?” – 50/50 odds, he’s fine either way.<br>
+    - “Can I fit in that box?” – The answer is always “Yes” in his mind.<br>
+    - “If I knock this off the table, will someone react?” – Progressive jackpot.
+  </p>
+</div>
+
+<!-- Start of LiveChat (www.livechat.com) code -->
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 19460492;
+    window.__lc.integration_name = "manual_channels";
+    window.__lc.product_name = "livechat";
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
+<noscript><a href="https://www.livechat.com/chat-with/19460492/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+<!-- End of LiveChat code -->
+
+</body>
+</html>
