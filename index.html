@@ -2,84 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cat Central – Home</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #111;
-      color: #eee;
-    }
-    nav {
-      background: #222;
-      padding: 10px 20px;
-      display: flex;
-      gap: 15px;
-    }
-    nav a {
-      color: #eee;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .content {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    h1, h2 {
-      color: #ffd54f;
-    }
-    p {
-      line-height: 1.6;
-    }
-  </style>
+  <title>LiveChat Minimal Test</title>
 </head>
 <body>
+  <h1>LiveChat Minimal Test</h1>
+  <p>If JavaScript is working on this page, you will see an alert when it loads.</p>
+  <p>If LiveChat is happy, you should also see the chat widget bubble in the corner.</p>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="joy.html">Joy</a>
-  <a href="jet.html">Jet</a>
-  <a href="rollino.html">Rollino</a>
-  <a href="casper.html">Casper</a>
-</nav>
+  <!-- Simple JS sanity check -->
+  <script>
+    alert('Index test: JavaScript IS running on index.html');
+    console.log('Index test: inline JS ran.');
+  </script>
 
-<div class="content">
-  <h1>Welcome to Cat Central</h1>
-  <p>
-    This tiny website is a secret HQ for four extremely opinionated cats:
-    Joy, Jet, Rollino, and Casper. Each one has its own page, story, and
-    very strong feelings about snack distribution.
-  </p>
-  <p>
-    Use the menu above to visit their pages. If you see the LiveChat widget
-    in the corner, don’t worry – it’s just the cats pretending to be support
-    agents. Response times may depend on nap schedules.
-  </p>
-  <h2>Our Feline Cast</h2>
-  <p>
-    Joy is chaos wrapped in purring. Jet thinks he’s a fighter jet. Rollino
-    audits all cardboard boxes. Casper is 90% fluff, 10% ghost.
-  </p>
-</div>
-<script>
-  console.log('JS debug: index.html script is running.');
-  alert('JS debug: index.html script is running.');
-</script>
-
-  
-<!-- Start of LiveChat (www.livechat.com) code -->
-<script>
-    window.__lc = window.__lc || {};
-    window.__lc.license = 19460492;
-    window.__lc.integration_name = "manual_channels";
-    window.__lc.product_name = "livechat";
-    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
-</script>
-<noscript><a href="https://www.livechat.com/chat-with/19460492/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
-<!-- End of LiveChat code -->
+  <!-- Start of LiveChat (www.livechat.com) code -->
+  <script>
+      window.__lc = window.__lc || {};
+      window.__lc.license = 19460492;
+      window.__lc.integration_name = "manual_channels";
+      window.__lc.product_name = "livechat";
+      ;(function(n,t,c){
+          function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}
+          var e={_q:[],_h:null,_v:"2.0",
+              on:function(){i(["on",c.call(arguments)])},
+              once:function(){i(["once",c.call(arguments)])},
+              off:function(){i(["off",c.call(arguments)])},
+              get:function(){
+                  if(!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
+                  return i(["get",c.call(arguments)])
+              },
+              call:function(){i(["call",c.call(arguments)])},
+              init:function(){
+                  var n=t.createElement("script");
+                  n.async=!0;
+                  n.type="text/javascript";
+                  n.src="https://cdn.livechatinc.com/tracking.js";
+                  t.head.appendChild(n)
+              }
+          };
+          !n.__lc.asyncInit && e.init();
+          n.LiveChatWidget = n.LiveChatWidget || e
+      }(window,document,[].slice));
+  </script>
+  <noscript>
+    <a href="https://www.livechat.com/chat-with/19460492/" rel="nofollow">Chat with us</a>,
+    powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+  </noscript>
+  <!-- End of LiveChat code -->
 </body>
 </html>
